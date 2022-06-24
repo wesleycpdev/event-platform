@@ -1,9 +1,9 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 export const client = new ApolloClient({
-    uri: import.meta.env.VITE_API_URL,
+    uri: "https://api-sa-east-1.graphcms.com/v2/cl4o8ke7w1a5e01z28s1x7luy/master",
     headers: {
-        'Authorization': `Bearer ${import.meta.env.VITE_API_ACCESS_TOKEN}`
+        'Authorization': "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImdjbXMtbWFpbi1wcm9kdWN0aW9uIn0.eyJ2ZXJzaW9uIjozLCJpYXQiOjE2NTYwMjk2MTMsImF1ZCI6WyJodHRwczovL2FwaS1zYS1lYXN0LTEuZ3JhcGhjbXMuY29tL3YyL2NsNG84a2U3dzFhNWUwMXoyOHMxeDdsdXkvbWFzdGVyIiwiaHR0cHM6Ly9tYW5hZ2VtZW50LW5leHQuZ3JhcGhjbXMuY29tIl0sImlzcyI6Imh0dHBzOi8vbWFuYWdlbWVudC5ncmFwaGNtcy5jb20vIiwic3ViIjoiMDAwOTIxZmQtYTc1OS00NzI5LWJjZTYtMGY5NTEyNjhkNGViIiwianRpIjoiY2w0cnA5dmRpMWZjMTAxeXdkMHNnZDdlaSJ9.s-iWOKB-vePmc3gC08l0HQ1-JVcXynI5jmF7DDjXuCeL32xFDYkXAH3KRIbLo6Yn2tv8Vz9YhnzDIP_8KOCHqiqWTuGcYcRthv4L5U_ikelWib_w_gmYa1WPuepZ0TpILGCtSaoAAR6qqf1PIz3Xw9HnFITVwDI77-78L3D89-Cb60BOjij19GAUD5wNWCfWhUq78EJiC_ZMpRh05-_5PjYyPnYe4jaYEf9QJ1rgYt1f9ji3XB_epqFUdRASSLmBh-3MJlPre5M8WPBseDYsAybTgqsBU4IraCaxJbh4s-CtvRJmr0GU80CLGTaeuoxtHsLqVrm77QPE6Ub85cReiEY5QFTBp5al32m466b5FbVJOSLiuC4IrrbSaaOTo4zAzg935uObeC4_TAmQh_wAQdZEQS7DbCxZzQz0ntO-LN5J2zULLyyK0g_nZVWNyGoYG_8LDNg3rcvOLEXZg5lNY_5s2UR8AQpy_W8TL9GdH-SDxc5KzggmtaOq3CkYoNgDHDie5KVGl5vS07rXUnxfqmu40i5NUvAkKVF817QMP-4VjseRM3_9fxXjEAeHL7eyOH99N9MS6JAeJvlEVDBSV-a8DsmsrR5Zlj374MU-lF0eBw0y2p8TA4TTEE6I49KGI1tX1TeJYig4kpjpYHu-fHjoFf3vlQmGQ5NxVaLtOvs"
     },
     cache: new InMemoryCache()
 })
