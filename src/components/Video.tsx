@@ -29,7 +29,7 @@ export function Video(props: VideoProps) {
     }
 
     return (
-        <div className="flex-1">
+        <div className="flex-1 mt-8">
             <div className="bg-black flex justify-center">
                 <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
                     <Player>
@@ -66,14 +66,18 @@ export function Video(props: VideoProps) {
                     </div>
 
                     <div className="flex flex-col gap-4">
-                        <a href="" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
+                        <a href="https://discord.gg/yKznMxE5" target="_blank" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
                             <DiscordLogo size={24} />
-                            Comunidade do discord
+                            Suporte
                         </a>
 
-                        <a href="" className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
+                        <a 
+                            target="_blank"
+                            href="https://www.google.com/search?q=estagio%20python&rlz=1C1CHZN_enBR1135BR1135&oq=estagio%20python&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDI4MjNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&jbr=sep:0&udm=8&ved=2ahUKEwi4xqy0o_uJAxUBK7kGHe9SBZQQ3L8LegQIJRAN"
+                            className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors"
+                        >
                             <Lightning size={24} />
-                            Acesse o desafio
+                            Vagas de estágio
                         </a>
                     </div>
                 </div>
