@@ -14,7 +14,7 @@ export function Lesson(props: LessonProps) {
     const { slug } = useParams<{ slug: string }>()
 
     const isLessonAvailable = isPast(props.availableAt);
-    const availableAtDateFormatted = format(props.availableAt, "EEEE' • 'd' de 'MMMM' • 'k'h'mm", {
+    const availableAtDateFormatted = format(props.availableAt, "EEEE' • 'd' de 'MMMM'", {
         locale: ptBR,
     })
 
