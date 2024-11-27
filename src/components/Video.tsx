@@ -1,9 +1,6 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, Image, Lightning } from "phosphor-react";
-import { gql, useQuery } from "@apollo/client";
-
 import '@vime/core/themes/default.css';
-import { Loading } from "./Loading";
 import { useGetLessonBySlugQuery } from "../graphql/generated";
 
 interface VideoProps {
@@ -19,12 +16,7 @@ export function Video(props: VideoProps) {
     
     if(!data || !data.lesson) {
         return (
-            <div className="flex-1 flex justify-center items-center">
-                <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 inline-flex items-center" disabled>
-                    <Loading />
-                    Carregando...
-                </button>
-            </div>
+            <></>
         )
     }
 
@@ -83,7 +75,7 @@ export function Video(props: VideoProps) {
                 </div>
 
                 <div className="gap-8 mt-20 grid grid-cols-2">
-                    <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+                    <a href="https://pythonfluente.com/" target="_blank" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
                         <div className="bg-green-700 h-full p-6 flex items-center">
                             <FileArrowDown size={40} />
                         </div>
@@ -103,18 +95,18 @@ export function Video(props: VideoProps) {
                         </div>
                     </a>
 
-                    <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+                    <a href="https://wallpapercave.com/python-wallpapers" target="_blank" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
                         <div className="bg-green-700 h-full p-6 flex items-center">
                             <Image size={40} />
                         </div>
 
                         <div className="py-6 leading-relaxed">
                             <strong className="text-2xl">
-                                Wallpapers exclusivos
+                                Wallpapers Python
                             </strong>
                             
                             <p className="text-sm text-gray-200 mt-2">
-                                Baixe wallpapers exclusivos dos tutoriais e personalize a sua máquina
+                                Baixe wallpapers de Python e personalize a sua máquina
                             </p>
                         </div>
 
