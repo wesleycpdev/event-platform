@@ -11,8 +11,8 @@ export function Event() {
     return (
         <>
             <Header />
-            <div className="flex flex-row">
-                <div className="w-[75%]">
+            <div className="flex flex-col lg:flex-row">
+                <div className="w-full lg:w-[75%]">
                     {   
                         slug ? <Video lessonSlug={slug} /> : 
                         <div className="p-5 flex justify-center bg-gray-700">
@@ -38,7 +38,7 @@ export function Event() {
                     }
                 </div>
 
-                <div className="w-[25%]">
+                <div className="w-full lg:w-[25%]">
                     <Sidebar />
                 </div>
             </div>
